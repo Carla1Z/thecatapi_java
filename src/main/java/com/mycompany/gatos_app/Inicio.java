@@ -32,9 +32,8 @@ public class Inicio {
                     GatosService.verGatos();
                     break;
                 case 1:
-                    Gatos.gato = new Gatos();
-                    GatosService.verFavoritos(gato.getApikey());
-                    break;
+                    Gatos gato = new Gatos();
+                    GatosService.verFavorito(gato.getApikey());
                 default:
                     break;
             }
